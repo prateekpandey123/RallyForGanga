@@ -1,0 +1,121 @@
+.text{
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    }
+    .trees{
+    text-shadow: 4px 4px 8px black;
+    font-size: 47px;
+    font-weight: bold;
+    color: blue;
+    }
+    .trees1{
+    font-size: 47px;
+    font-weight: bold;
+    color: blue;
+    }
+    .Contributed{
+    color:  black;
+    font-weight: bold;
+    font-size: 24px;
+    }
+    .Contributed1{
+    color: #4F0056;
+    font-weight: bold;
+    font-size: 20px;
+    }
+    .trees-fee{
+    font-size: 40px;
+    font-weight: bold;
+    color: blue;
+    }
+    .border1{
+    border: 2px solid black;
+    font-weight: 600;
+    background: #fff;
+    border: 2px solid #b8b8b8;
+    border-radius: 10px;
+    display: inline-block;
+    line-height: 42px;
+    text-align: center;
+    height: 47.7px;
+    position: relative;
+    top: -1px;
+    width: 38.1px;
+    font-size: 42px;
+    color: #000;
+    font-family: arial;
+    letter-spacing: .53px;
+    margin: 0 0 0 4px;
+    }
+    .box{
+    text-shadow: 4px 4px 8px black;
+    }
+
+
+
+
+/* Donate Button */
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+/* ICON SOCIAL SITE */
